@@ -7,9 +7,9 @@ const Add = () => {
   const [price, setPrice] = useState('');
   const [stock, setStock] = useState('');
   const [status, setStatus] = useState(true); // status default terceklis (true)
-  
-  const apiUrlv1 = 'https://backendexpressmongo-83je.vercel.app/api/v1/products';
-  const apiUrlv2 = 'https://backendexpressmongo-83je.vercel.app/api/v2/products';
+
+const apiUrlv1 = 'https://backendexpressmongo-37nr.vercel.app/api/v1/products';
+const apiUrlv2 = 'https://backendexpressmongo-37nr.vercel.app/api/v2/products';
 
   const handleSubmit = async (e) => {
     e.preventDefault();
