@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import './index.scss';
 
-const apiUrlv1 = 'https://backendexpressmongo.vercel.app/api/v1/products';
-const apiUrlv2 = 'https://backendexpressmongo.vercel.app/api/v2/products';
+const apiUrlv1 = 'https://backendexpressmongo-4486.vercel.app/api/v1/products';
+const apiUrlv2 = 'https://backendexpressmongo-4486.vercel.app/api/v2/products';
 
 const Detail = () => {
   const [product, setProduct] = useState(null);
