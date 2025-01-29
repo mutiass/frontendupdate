@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import Input from '../../components/Input';
 import './index.scss';
 
-const apiUrlv1 = 'https://backendexpressmongo-7c1i.vercel.app/api/v1/products';
-const apiUrlv2 = 'https://backendexpressmongo-7c1i.vercel.app/api/v2/products';
-
 const Add = () => {
   const [name, setName] = useState('');
   const [price, setPrice] = useState('');
   const [stock, setStock] = useState('');
   const [status, setStatus] = useState(true); // status default terceklis (true)
+
+  const apiUrlv1 = 'https://backendexpressmongo-7c1i.vercel.app/api/v1/products';
+  const apiUrlv2 = 'https://backendexpressmongo-7c1i.vercel.app/api/v2/products';
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -18,7 +18,7 @@ const Add = () => {
       name,
       price,
       stock,
-      status,
+      status
     };
 
     try {
@@ -42,7 +42,6 @@ const Add = () => {
 
       const [responseV1, responseV2] = responses;
 
-      // Jika kedua API berhasil
       if (responseV1.ok && responseV2.ok) {
         alert('Produk berhasil ditambahkan ke v1 dan v2!');
         // Reset form setelah submit berhasil
@@ -52,14 +51,6 @@ const Add = () => {
         setStatus(true);
       } else {
         alert('Gagal menambahkan produk ke salah satu API!');
-        
-        // Log error jika ada respons yang gagal
-        if (!responseV1.ok) {
-          console.error('Gagal di v1:', await responseV1.text());
-        }
-        if (!responseV2.ok) {
-          console.error('Gagal di v2:', await responseV2.text());
-        }
       }
     } catch (error) {
       console.error('Terjadi kesalahan saat menambah produk:', error);
