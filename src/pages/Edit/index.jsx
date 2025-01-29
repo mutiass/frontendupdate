@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import Input from '../../components/Input'; // Mengimpor komponen Input
 
-const apiUrlv1 = 'https://backendexpressmongo-7c1i.vercel.app/api/v1/products';
-const apiUrlv2 = 'https://backendexpressmongo-7c1i.vercel.app/api/v2/products';
+const apiUrlv1 = 'https://backendexpressmongo-37nr.vercel.app/api/v1/products';
+const apiUrlv2 = 'https://backendexpressmongo-37nr.vercel.app/api/v2/products';
 
 const Edit = () => {
   const [product, setProduct] = useState({
