@@ -1,0 +1,16 @@
+node_modules
+public
+src :
+    components :
+        Input : index.jsx,
+        Navigation : index.jsx, index.scss
+    pages :
+        Add : index.jsx, index.scss
+        Detail : index.jsx, index.scss
+        Edit : index.jsx
+        Home : index.jsx, index.scss
+App.css
+App.js
+package.json
+yarn.lock
+dan lain-lain
